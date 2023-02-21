@@ -32,12 +32,15 @@ ul, ol, menu {
 .todo-list__head {
     padding: 20px;
     border-bottom: 1px solid black;
+    display: flex;
+    gap: 20px;
 }
 
 /* Input */
 .input {
-    padding: 5px;
-    margin-right: 20px;
+    padding: 10px;
+    font-size: 14px;
+    flex-grow: 1;
 }
 
 /* Bottone */
@@ -52,4 +55,11 @@ ul, ol, menu {
 /* Corpo della To Do List */
 .todo-list__body {
     padding: 20px;
+}
+
+/* Lista */
+.list {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
