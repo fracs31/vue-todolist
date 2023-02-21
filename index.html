@@ -22,7 +22,7 @@
                     <div class="todo-list__head">
                         <!-- Input -->
                         <input class="input" type="text" placeholder="Inserire una nuova task">
-                        <!-- Bottone -->
+                        <!-- Bottone per aggiungere la task -->
                         <button class="btn">
                             <i class="fa-solid fa-plus"></i>
                         </button>
@@ -32,7 +32,13 @@
                         <!-- Lista -->
                         <ul class="list">
                             <!-- Elemento -->
-                            <li v-for="(task, i) in tasks" v-bind:class="(task.done) ? 'done' : '' "> {{ task.text }}</li>
+                            <li v-for="(task, i) in tasks" v-bind:class="(task.done) ? 'done' : '' ">
+                                {{ task.text }}
+                                <!-- Bottone per cancellare la task -->
+                                <button class="btn" v-on:click="deleteTask(i)">
+                                    <i class="fa-solid fa-xmark"></i>
+                                </button>
+                            </li>
                         </ul>
                     </div>
                 </div>

@@ -1,6 +1,7 @@
 const { createApp } = Vue; //Vue
 //App
 createApp({
+    //Dati
     data() {
       return {
         //Tasks
@@ -27,5 +28,12 @@ createApp({
             }
         ]
       }
+    },
+    //Metodi
+    methods: {
+        //Metodo per cancellare una task
+        deleteTask(i) {
+            this.tasks.splice(i, 1); //cancello la task
+        }
     }
 }).mount('#app');
