@@ -32,7 +32,7 @@
                         <!-- Lista -->
                         <ul class="list">
                             <!-- Elemento -->
-                            <li v-for="(task, i) in tasks" v-bind:class="(task.done) ? 'done' : '' ">
+                            <li class="list-item" v-for="(task, i) in tasks" v-bind:class="(task.done) ? 'done' : ''" v-on:click="(task.done) ? task.done = false : task.done = true">
                                 {{ task.text }}
                                 <!-- Bottone per cancellare la task -->
                                 <button class="btn" v-on:click="deleteTask(i)">

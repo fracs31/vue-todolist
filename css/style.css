@@ -64,6 +64,11 @@ ul, ol, menu {
     gap: 20px;
 }
 
+/* Elemento della lista */
+.list-item {
+    cursor: pointer;
+}
+
 /* Se la task è stata svolta */
 .done {
     text-decoration: line-through;
