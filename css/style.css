@@ -63,3 +63,8 @@ ul, ol, menu {
     flex-direction: column;
     gap: 20px;
 }
+
+/* Se la task è stata svolta */
+.done {
+    text-decoration: line-through;
+}

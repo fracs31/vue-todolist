@@ -31,7 +31,8 @@
                     <div class="todo-list__body">
                         <!-- Lista -->
                         <ul class="list">
-                            
+                            <!-- Elemento -->
+                            <li v-for="(task, i) in tasks" v-bind:class="(task.done) ? 'done' : '' "> {{ task.text }}</li>
                         </ul>
                     </div>
                 </div>
