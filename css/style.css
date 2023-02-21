@@ -20,3 +20,36 @@ ul, ol, menu {
 .main-content {
     padding-top: 100px;
 }
+
+/* To Do List */
+.todo-list {
+    background-color: #faf9f9;
+    border: 1px solid black;
+    border-radius: 4px;
+}
+
+/* Testa della To Do List */
+.todo-list__head {
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+/* Input */
+.input {
+    padding: 5px;
+    margin-right: 20px;
+}
+
+/* Bottone */
+.btn {
+    background-color: transparent;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Corpo della To Do List */
+.todo-list__body {
+    padding: 20px;
+}
